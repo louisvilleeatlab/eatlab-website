@@ -429,6 +429,15 @@
   }
   @media (max-width: 900px) { .aims-grid { grid-template-columns: 1fr; } }
 
+  /* Two-column variant, for sections with an even number of cards — e.g. the
+     four research questions on /research-publications. Named for the layout
+     rather than the page so any future section with 2/4/6 cards can reuse it.
+     The media query below is required, not redundant: `.aims-grid.cols-2` is
+     more specific than `.aims-grid`, so without it this rule would beat the
+     mobile collapse above and force two columns on phones. */
+  .aims-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 900px) { .aims-grid.cols-2 { grid-template-columns: 1fr; } }
+
   .aim-card {
     background: white;
     border: 1px solid var(--line);
