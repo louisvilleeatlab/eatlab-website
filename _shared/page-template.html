@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ===== FILL IN: page title. Format "[Page Name] | EAT Lab" ===== -->
+<title>PAGE NAME HERE | EAT Lab</title>
+
+<!-- ===== FILL IN: 140-160 characters, written from this page's real content ===== -->
+<meta name="description" content="PAGE DESCRIPTION HERE — 140 to 160 characters, drawn from what is actually on the page, not boilerplate about the lab in general.">
+
+<!-- ===== FILL IN: this page's path on the production domain ===== -->
+<link rel="canonical" href="https://www.louisvilleeatlab.com/PAGE-URL-HERE">
+
+<!-- ===== FILL IN: Open Graph. Keep og:description identical to the meta description.
+         og:image must be an ABSOLUTE url. Swap lab-photo.jpg if this page has a better image. ===== -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EAT Lab — University of Louisville">
+<meta property="og:title" content="PAGE NAME HERE | EAT Lab">
+<meta property="og:description" content="PAGE DESCRIPTION HERE — same text as the meta description above.">
+<meta property="og:image" content="https://www.louisvilleeatlab.com/images/lab-photo.jpg">
+<meta property="og:url" content="https://www.louisvilleeatlab.com/PAGE-URL-HERE">
+
+<!-- ===== SHARED — do not edit per page ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" sizes="32x32" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="theme-color" content="#2354A2">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- ===== SHARED: top bar ===== -->
+<!-- UofL bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <span class="top-bar-uofl">
+        <span class="top-bar-cardinal"></span>
+        UNIVERSITY OF LOUISVILLE
+      </span>
+    </div>
+    <div class="top-bar-right">
+      <a>Department of Psychological &amp; Brain Sciences</a>
+      <a>College of Arts &amp; Sciences</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SHARED: header + nav =====
+     NAV ACTIVE INDICATOR: nothing to do here. The script at the bottom of this
+     file adds class="active" to whichever nav link matches this page's URL.
+     If you are adding a NEW page, add its <a> to the nav below and then
+     find-and-replace this whole <nav class="primary"> block across every .html
+     file at the repo root so all copies stay identical.
+===== -->
+<!-- Main header -->
+<header>
+  <div class="container header-inner">
+    <a class="brand" href="/">
+      <img class="brand-logo" src="/images/logo.png" alt="EAT Lab — Eating Anxiety Treatment Laboratory and Clinic">
+      <span class="brand-uofl">College of Arts &amp; Sciences<br>University of Louisville</span>
+    </a>
+    <nav class="primary">
+      <a data-page="home" href="/">About</a>
+      <a data-page="research" href="/research-publications">Research</a>
+      <a data-page="participate" href="/participate-in-research">Participate</a>
+      <a data-page="team" href="/our-team">Our Team</a>
+      <a data-page="resources" href="/eating-disorder-resources">Resources</a>
+      <a data-page="news" href="/blog">News</a>
+      <a class="cta-button" href="/participate-in-research">Join a Study</a>
+    </nav>
+    <button class="mobile-toggle" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="/" onclick="toggleMobile()">About</a>
+    <a href="/research-publications" onclick="toggleMobile()">Research</a>
+    <a href="/participate-in-research" onclick="toggleMobile()">Participate</a>
+    <a href="/our-team" onclick="toggleMobile()">Our Team</a>
+    <a href="/eating-disorder-resources" onclick="toggleMobile()">Resources</a>
+    <a href="/blog" onclick="toggleMobile()">News</a>
+  </div>
+</header>
+
+<!-- ===== FILL IN: this page's content. Everything above and below is shared. ===== -->
+<main>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a> · PAGE NAME HERE</div>
+      <h1>PAGE HEADING HERE</h1>
+      <p>One or two sentences introducing the page.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <!-- PAGE CONTENT GOES HERE -->
+    </div>
+  </section>
+
+</main>
+<!-- ===== END page content ===== -->
+
+<!-- ===== SHARED: footer ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>EAT Lab</h4>
+        <p>The Eating Anxiety Treatment Laboratory at the University of Louisville. Developing personalized, evidence-based treatments for eating disorders and anxiety.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/research-publications">Research</a></li>
+          <li><a href="/our-team">Our Team</a></li>
+          <li><a href="/blog">News</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get involved</h5>
+        <ul>
+          <li><a href="/participate-in-research">Participate</a></li>
+          <li><a href="/eating-disorder-resources">Resources</a></li>
+          <li><a>Donate</a></li>
+          <li><a>Prospective students</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Visit</h5>
+        <ul>
+          <li>Life Sciences Building</li>
+          <li>2301 S 3rd St</li>
+          <li>Louisville, KY 40292</li>
+          <li><a>Directions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 EAT Lab · University of Louisville</div>
+      <div class="footer-social">
+        <a>Facebook</a>
+        <a>Instagram</a>
+        <a>Twitter / X</a>
+        <a>Email</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== SHARED: scripts ===== -->
+<script>
+// Mobile nav toggle (unrelated to page switching — kept from the SPA).
+function toggleMobile() {
+  document.getElementById('mobileNav').classList.toggle('open');
+}
+
+// Current-page nav indication. Identical on every page — safe to find-and-replace.
+(function () {
+  var path = window.location.pathname.replace(/\.html$/, '').replace(/\/index$/, '/');
+  if (path.length > 1) path = path.replace(/\/$/, '');
+  if (!path) path = '/';
+  var links = document.querySelectorAll('nav.primary a:not(.cta-button), .mobile-nav a');
+  Array.prototype.forEach.call(links, function (a) {
+    var href = (a.getAttribute('href') || '').replace(/\.html$/, '');
+    if (href === path) {
+      a.classList.add('active');
+      a.setAttribute('aria-current', 'page');
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

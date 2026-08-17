@@ -4,6 +4,16 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>EAT Lab — University of Louisville</title>
+<meta name="description" content="The EAT Lab at the University of Louisville develops personalized treatments for eating disorders and anxiety, and works to improve access to quality care.">
+<link rel="canonical" href="https://www.louisvilleeatlab.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EAT Lab — University of Louisville">
+<meta property="og:title" content="EAT Lab — University of Louisville">
+<meta property="og:description" content="The EAT Lab at the University of Louisville develops personalized treatments for eating disorders and anxiety, and works to improve access to quality care.">
+<meta property="og:image" content="https://www.louisvilleeatlab.com/images/lab-photo.jpg">
+<meta property="og:url" content="https://www.louisvilleeatlab.com/">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,7 +23,6 @@
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-
 
 <!-- UofL bar -->
 <div class="top-bar">
@@ -34,35 +43,34 @@
 <!-- Main header -->
 <header>
   <div class="container header-inner">
-    <div class="brand" onclick="showPage('home')">
+    <a class="brand" href="/">
       <img class="brand-logo" src="/images/logo.png" alt="EAT Lab — Eating Anxiety Treatment Laboratory and Clinic">
       <span class="brand-uofl">College of Arts &amp; Sciences<br>University of Louisville</span>
-    </div>
+    </a>
     <nav class="primary">
-      <a class="active" data-page="home" onclick="showPage('home')">About</a>
-      <a data-page="research" onclick="showPage('research')">Research</a>
-      <a data-page="participate" onclick="showPage('participate')">Participate</a>
-      <a data-page="team" onclick="showPage('team')">Our Team</a>
-      <a data-page="resources" onclick="showPage('resources')">Resources</a>
-      <a data-page="news" onclick="showPage('news')">News</a>
-      <button class="cta-button" onclick="showPage('participate')">Join a Study</button>
+      <a data-page="home" href="/">About</a>
+      <a data-page="research" href="/research-publications">Research</a>
+      <a data-page="participate" href="/participate-in-research">Participate</a>
+      <a data-page="team" href="/our-team">Our Team</a>
+      <a data-page="resources" href="/eating-disorder-resources">Resources</a>
+      <a data-page="news" href="/blog">News</a>
+      <a class="cta-button" href="/participate-in-research">Join a Study</a>
     </nav>
     <button class="mobile-toggle" onclick="toggleMobile()">
       <span></span><span></span><span></span>
     </button>
   </div>
   <div class="mobile-nav" id="mobileNav">
-    <a onclick="showPage('home'); toggleMobile()">About</a>
-    <a onclick="showPage('research'); toggleMobile()">Research</a>
-    <a onclick="showPage('participate'); toggleMobile()">Participate</a>
-    <a onclick="showPage('team'); toggleMobile()">Our Team</a>
-    <a onclick="showPage('resources'); toggleMobile()">Resources</a>
-    <a onclick="showPage('news'); toggleMobile()">News</a>
+    <a href="/" onclick="toggleMobile()">About</a>
+    <a href="/research-publications" onclick="toggleMobile()">Research</a>
+    <a href="/participate-in-research" onclick="toggleMobile()">Participate</a>
+    <a href="/our-team" onclick="toggleMobile()">Our Team</a>
+    <a href="/eating-disorder-resources" onclick="toggleMobile()">Resources</a>
+    <a href="/blog" onclick="toggleMobile()">News</a>
   </div>
 </header>
 
-<!-- ================ HOME ================ -->
-<main class="page active" id="page-home">
+<main>
   <section class="hero">
     <div class="hero-decor"></div>
     <div class="container hero-inner">
@@ -74,12 +82,12 @@
         <h1>Research on <span class="accent">eating disorders</span> &amp; anxiety.</h1>
         <p class="hero-lead">The Eating Anxiety Treatment (EAT) Laboratory is dedicated to developing novel, personalized treatments for eating disorders — and improving access to quality care for the people who need it.</p>
         <div class="hero-buttons">
-          <button class="btn btn-primary" onclick="showPage('participate')">
+          <a class="btn btn-primary" href="/participate-in-research">
             Participate in research <span class="arrow">→</span>
-          </button>
-          <button class="btn btn-outline" onclick="showPage('research')">
+          </a>
+          <a class="btn btn-outline" href="/research-publications">
             About our research
-          </button>
+          </a>
         </div>
       </div>
       <div class="hero-visual">
@@ -98,7 +106,7 @@
   <div class="quick-row">
     <div class="container">
       <div class="quick-grid">
-        <a class="quick-item" onclick="showPage('participate')">
+        <a class="quick-item" href="/participate-in-research">
           <div class="quick-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
@@ -107,7 +115,7 @@
             <div class="sub">Active enrollment</div>
           </div>
         </a>
-        <a class="quick-item" onclick="showPage('resources')">
+        <a class="quick-item" href="/eating-disorder-resources">
           <div class="quick-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </div>
@@ -116,7 +124,7 @@
             <div class="sub">Find resources</div>
           </div>
         </a>
-        <a class="quick-item" onclick="showPage('team')">
+        <a class="quick-item" href="/our-team">
           <div class="quick-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
           </div>
@@ -153,7 +161,7 @@
           <h2>Dedicated to research on and treatment for eating disorders.</h2>
           <p>The EAT Lab has a six-pronged mission, all centered on improving the lives of those with eating disorders: conducting cutting-edge research to develop novel treatments, providing high-quality evidence-based treatment, training the next generation of researchers and clinicians, distributing prevention programs across the community, and advocating for better care and access.</p>
           <p>Located in the Department of Psychological &amp; Brain Sciences at the University of Louisville, directed by Dr. Cheri A. Levinson.</p>
-          <button class="btn btn-outline" onclick="showPage('research')" style="margin-top:8px;">Learn more <span class="arrow">→</span></button>
+          <a class="btn btn-outline" style="margin-top:8px;" href="/research-publications">Learn more <span class="arrow">→</span></a>
         </div>
       </div>
     </div>
@@ -196,7 +204,7 @@
         <p>Most studies run online. All are IRB-approved and compensated. Help shape the next generation of eating disorder treatment.</p>
       </div>
       <div class="studies-grid">
-        <div class="study-card" onclick="showPage('participate')">
+        <a class="study-card" href="/participate-in-research">
           <div class="study-image">
             <span class="study-status">Recruiting</span>
             PIONEER
@@ -209,8 +217,8 @@
               <span class="study-meta-link">Learn more <span class="arrow">→</span></span>
             </div>
           </div>
-        </div>
-        <div class="study-card" onclick="showPage('participate')">
+        </a>
+        <a class="study-card" href="/participate-in-research">
           <div class="study-image i2">
             <span class="study-status">Recruiting</span>
             YES!
@@ -223,8 +231,8 @@
               <span class="study-meta-link">Learn more <span class="arrow">→</span></span>
             </div>
           </div>
-        </div>
-        <div class="study-card" onclick="showPage('participate')">
+        </a>
+        <a class="study-card" href="/participate-in-research">
           <div class="study-image i3">
             <span class="study-status online">Online</span>
             TRAC
@@ -237,12 +245,12 @@
               <span class="study-meta-link">Learn more <span class="arrow">→</span></span>
             </div>
           </div>
-        </div>
+        </a>
       </div>
       <div style="text-align:center; margin-top:32px;">
-        <button class="btn btn-outline" onclick="showPage('participate')">
+        <a class="btn btn-outline" href="/participate-in-research">
           View all 7 studies <span class="arrow">→</span>
-        </button>
+        </a>
       </div>
     </div>
   </section>
@@ -304,455 +312,14 @@
         </div>
       </div>
       <div style="text-align:center; margin-top:40px;">
-        <button class="btn btn-outline" onclick="showPage('news')">
+        <a class="btn btn-outline" href="/blog">
           All press &amp; blog posts <span class="arrow">→</span>
-        </button>
+        </a>
       </div>
     </div>
   </section>
 </main>
 
-<!-- ================ RESEARCH ================ -->
-<main class="page" id="page-research">
-  <div class="page-header">
-    <div class="container">
-      <div class="breadcrumb"><a onclick="showPage('home')">Home</a> · Research</div>
-      <h1>Our Research &amp; Publications</h1>
-      <p>Our program of research spans novel treatment development, personalization through computational psychiatry, and the intersection of eating disorders and anxiety.</p>
-    </div>
-  </div>
-
-  <section>
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Approach</span>
-        <h2>How we do the work.</h2>
-        <p>We combine clinical trials, ecological momentary assessment, network analysis, virtual reality, and community partnership.</p>
-      </div>
-      <div class="aims-grid">
-        <div class="aim-card">
-          <div class="aim-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg>
-          </div>
-          <h3>Network analysis</h3>
-          <p>Dynamic network modeling to identify how a person's symptoms connect and reinforce each other over time, then use those maps to guide treatment.</p>
-        </div>
-        <div class="aim-card">
-          <div class="aim-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
-          </div>
-          <h3>Momentary assessment</h3>
-          <p>Short daily surveys on participants' phones give us signal on how symptoms unfold in real life, not just in clinic visits.</p>
-        </div>
-        <div class="aim-card">
-          <div class="aim-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M8 12h.01M16 12h.01"/></svg>
-          </div>
-          <h3>Virtual reality exposure</h3>
-          <p>We develop and test VR-based exposure tools that let clinicians simulate feared situations safely and systematically.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section style="padding-top:0;">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Publications</span>
-        <h2>Selected recent publications.</h2>
-        <p>A sample of peer-reviewed work from the lab. See our full list on Google Scholar.</p>
-      </div>
-      <div class="pubs">
-        <div class="filter-row">
-          <button class="filter-btn active">All</button>
-          <button class="filter-btn">Treatment</button>
-          <button class="filter-btn">Personalization</button>
-          <button class="filter-btn">Comorbidity</button>
-          <button class="filter-btn">Methods</button>
-        </div>
-        <div class="pub-item">
-          <div class="pub-year">2025</div>
-          <div>
-            <div class="pub-title">Personalized treatment for eating disorders: A randomized controlled trial of a network-informed intervention</div>
-            <div class="pub-journal">Journal of Consulting and Clinical Psychology</div>
-          </div>
-          <a class="pub-link">PDF ↗</a>
-        </div>
-        <div class="pub-item">
-          <div class="pub-year">2024</div>
-          <div>
-            <div class="pub-title">Adapting exposure therapy for anorexia nervosa: Protocol and preliminary outcomes</div>
-            <div class="pub-journal">Behaviour Research and Therapy</div>
-          </div>
-          <a class="pub-link">PDF ↗</a>
-        </div>
-        <div class="pub-item">
-          <div class="pub-year">2024</div>
-          <div>
-            <div class="pub-title">Idiographic symptom networks in eating disorders: Stability, structure, and clinical utility</div>
-            <div class="pub-journal">Psychological Medicine</div>
-          </div>
-          <a class="pub-link">PDF ↗</a>
-        </div>
-        <div class="pub-item">
-          <div class="pub-year">2023</div>
-          <div>
-            <div class="pub-title">Barriers to eating disorder treatment access: A national survey</div>
-            <div class="pub-journal">International Journal of Eating Disorders</div>
-          </div>
-          <a class="pub-link">PDF ↗</a>
-        </div>
-        <div class="pub-item">
-          <div class="pub-year">2023</div>
-          <div>
-            <div class="pub-title">Anxiety and eating disorder comorbidity: A transdiagnostic model</div>
-            <div class="pub-journal">Clinical Psychology Review</div>
-          </div>
-          <a class="pub-link">PDF ↗</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<!-- ================ PARTICIPATE ================ -->
-<main class="page" id="page-participate">
-  <div class="page-header">
-    <div class="container">
-      <div class="breadcrumb"><a onclick="showPage('home')">Home</a> · Participate</div>
-      <h1>Participate in Research</h1>
-      <p>Contribute to research that shapes eating disorder treatment. All studies are IRB-approved through the University of Louisville. Most are compensated and many are fully online.</p>
-    </div>
-  </div>
-
-  <section>
-    <div class="container">
-      <div class="studies-grid">
-        <div class="study-card">
-          <div class="study-image">
-            <span class="study-status">Recruiting</span>
-            PIONEER
-          </div>
-          <div class="study-body">
-            <h4>PIONEER Study</h4>
-            <p>Personalized Interventions and Outcomes: Navigating Eating Disorder Experiences and Recovery.</p>
-            <div class="study-meta"><span class="study-meta-info">Ages 18+ · Online</span><span class="study-meta-link">Get started <span class="arrow">→</span></span></div>
-          </div>
-        </div>
-        <div class="study-card">
-          <div class="study-image i2">
-            <span class="study-status">Recruiting</span>
-            YES!
-          </div>
-          <div class="study-body">
-            <h4>Youth Eating Study</h4>
-            <p>Understanding eating behaviors and body image in adolescents to inform earlier prevention.</p>
-            <div class="study-meta"><span class="study-meta-info">Ages 12–17</span><span class="study-meta-link">Get started <span class="arrow">→</span></span></div>
-          </div>
-        </div>
-        <div class="study-card">
-          <div class="study-image i3">
-            <span class="study-status online">Online</span>
-            TRAC
-          </div>
-          <div class="study-body">
-            <h4>TRAC Study</h4>
-            <p>Tracking Restriction, Affect, and Cognitions. Daily short surveys to understand symptoms as they unfold.</p>
-            <div class="study-meta"><span class="study-meta-info">Ages 18+ · Online</span><span class="study-meta-link">Get started <span class="arrow">→</span></span></div>
-          </div>
-        </div>
-        <div class="study-card">
-          <div class="study-image i4">
-            <span class="study-status">Recruiting</span>
-            VR
-          </div>
-          <div class="study-body">
-            <h4>Virtual Reality Study</h4>
-            <p>Testing VR-based exposure techniques for eating disorder treatment in the Louisville area.</p>
-            <div class="study-meta"><span class="study-meta-info">Ages 18+ · Louisville</span><span class="study-meta-link">Get started <span class="arrow">→</span></span></div>
-          </div>
-        </div>
-        <div class="study-card">
-          <div class="study-image i5">
-            <span class="study-status online">Online</span>
-            EBPT-MDD
-          </div>
-          <div class="study-body">
-            <h4>EBPT-MDD</h4>
-            <p>Evidence-Based Personalized Treatment for Depression. Tailored treatment for depression.</p>
-            <div class="study-meta"><span class="study-meta-info">Ages 18+ · Online</span><span class="study-meta-link">Get started <span class="arrow">→</span></span></div>
-          </div>
-        </div>
-        <div class="study-card">
-          <div class="study-image i6">
-            <span class="study-status">Prevention</span>
-            Body Project
-          </div>
-          <div class="study-body">
-            <h4>The Body Project</h4>
-            <p>Evidence-based prevention program reducing eating disorder risk factors. Available for schools &amp; groups.</p>
-            <div class="study-meta"><span class="study-meta-info">All ages</span><span class="study-meta-link">Request program <span class="arrow">→</span></span></div>
-          </div>
-        </div>
-        <div class="study-card">
-          <div class="study-image i7">
-            <span class="study-status online">Self-guided</span>
-            HOPE
-          </div>
-          <div class="study-body">
-            <h4>Self-Guided HOPE</h4>
-            <p>A free, self-guided online program combining evidence-based tools for eating disorder symptoms.</p>
-            <div class="study-meta"><span class="study-meta-info">Ages 18+ · Online</span><span class="study-meta-link">Start program <span class="arrow">→</span></span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="helper-band">
-        <h3>Not sure which study fits?</h3>
-        <p>Answer a few questions and we'll suggest studies you may be eligible for. Takes about 2 minutes.</p>
-        <button class="btn btn-primary">Find studies for me <span class="arrow">→</span></button>
-      </div>
-    </div>
-  </section>
-</main>
-
-<!-- ================ TEAM ================ -->
-<main class="page" id="page-team">
-  <div class="page-header">
-    <div class="container">
-      <div class="breadcrumb"><a onclick="showPage('home')">Home</a> · Our Team</div>
-      <h1>Meet Our Team</h1>
-      <p>A multidisciplinary group of clinical psychologists, research staff, graduate students, and undergraduate researchers united around eating disorder science.</p>
-    </div>
-  </div>
-
-  <section>
-    <div class="container">
-      <div class="director-card">
-        <div class="director-photo">CL</div>
-        <div class="director-info">
-          <span class="director-badge">Director</span>
-          <h3>Dr. Cheri A. Levinson, Ph.D.</h3>
-          <div class="title">Professor of Psychological &amp; Brain Sciences</div>
-          <p>Dr. Levinson's research develops personalized, evidence-based treatments for eating disorders and the anxiety that so often accompanies them. Her work has been funded by NIMH, NIH, and multiple foundations, and has been featured in the Sydney Morning Herald, APS Observer, and more.</p>
-        </div>
-      </div>
-
-      <div class="team-section-title">
-        <h3>Faculty &amp; Staff</h3>
-        <span class="count">4 members</span>
-      </div>
-      <div class="team-grid">
-        <div class="team-card"><div class="team-photo">BO</div><div class="team-name">Brittany Ozane</div><div class="team-role">Lab Manager</div></div>
-        <div class="team-card"><div class="team-photo">—</div><div class="team-name">Postdoctoral Fellow</div><div class="team-role">Clinical Psychology</div></div>
-        <div class="team-card"><div class="team-photo">—</div><div class="team-name">Research Coordinator</div><div class="team-role">Clinical Studies</div></div>
-        <div class="team-card"><div class="team-photo">—</div><div class="team-name">Data Scientist</div><div class="team-role">Computational Psychiatry</div></div>
-      </div>
-
-      <div class="team-section-title">
-        <h3>Graduate Students</h3>
-        <span class="count">6 members</span>
-      </div>
-      <div class="team-grid">
-        <div class="team-card"><div class="team-photo">—</div><div class="team-name">Doctoral Student</div><div class="team-role">Year 5</div></div>
-        <div class="team-card"><div class="team-photo">—</div><div class="team-name">Doctoral Student</div><div class="team-role">Year 4</div></div>
-        <div class="team-card"><div class="team-photo">—</div><div class="team-name">Doctoral Student</div><div class="team-role">Year 3</div></div>
-        <div class="team-card"><div class="team-photo">—</div><div class="team-name">Doctoral Student</div><div class="team-role">Year 2</div></div>
-      </div>
-
-      <div class="team-section-title">
-        <h3>Alumni</h3>
-        <span class="count">1 member</span>
-      </div>
-      <div class="team-grid">
-        <div class="team-card"><div class="team-photo">CC</div><div class="team-name">Claire Cusack</div><div class="team-role">Ph.D. Alumna</div></div>
-      </div>
-
-      <div class="helper-band">
-        <h3>Interested in joining?</h3>
-        <p>We're always looking for talented graduate students, research assistants, and collaborators.</p>
-        <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
-          <button class="btn btn-outline">For prospective grad students</button>
-          <button class="btn btn-primary">Current openings</button>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<!-- ================ RESOURCES ================ -->
-<main class="page" id="page-resources">
-  <div class="page-header">
-    <div class="container">
-      <div class="breadcrumb"><a onclick="showPage('home')">Home</a> · Resources</div>
-      <h1>Eating Disorder Resources</h1>
-      <p>If you or someone you love is struggling, these are a starting point. They're not a substitute for treatment. If you're in crisis, please reach out below.</p>
-    </div>
-  </div>
-
-  <section>
-    <div class="container">
-      <div class="crisis-callout">
-        <div>
-          <strong>In immediate crisis?</strong>
-          <p>Call or text 988 to reach the Suicide &amp; Crisis Lifeline — free, confidential, 24/7.</p>
-        </div>
-        <div class="crisis-number">988</div>
-      </div>
-
-      <div class="resources-grid">
-        <div class="resource-group">
-          <h3>Eating disorder support</h3>
-          <a class="resource-link" href="https://www.allianceforeatingdisorders.com/" target="_blank" rel="noopener noreferrer">
-            <div class="r-name">National Alliance for Eating Disorders ↗</div>
-            <div class="r-desc">Free helpline, therapist search, and support groups</div>
-          </a>
-          <a class="resource-link" href="https://anad.org/" target="_blank" rel="noopener noreferrer">
-            <div class="r-name">ANAD Helpline ↗</div>
-            <div class="r-desc">Peer support and referrals</div>
-          </a>
-          <a class="resource-link" href="https://www.theprojectheal.org/" target="_blank" rel="noopener noreferrer">
-            <div class="r-name">Project HEAL ↗</div>
-            <div class="r-desc">Treatment access and insurance navigation</div>
-          </a>
-          <a class="resource-link" href="https://feast-ed.org/" target="_blank" rel="noopener noreferrer">
-            <div class="r-name">F.E.A.S.T. ↗</div>
-            <div class="r-desc">Support for families and caregivers</div>
-          </a>
-          <a class="resource-link" href="https://www.louisvillecenterforeatingdisorders.com/" target="_blank" rel="noopener noreferrer">
-            <div class="r-name">Louisville Center for Eating Disorders ↗</div>
-            <div class="r-desc">Local eating disorder treatment in the Louisville area</div>
-          </a>
-        </div>
-
-        <div class="resource-group">
-          <h3>Finding a therapist</h3>
-          <a class="resource-link">
-            <div class="r-name">Psychology Today Directory ↗</div>
-            <div class="r-desc">Search by insurance, specialty, location</div>
-          </a>
-          <a class="resource-link">
-            <div class="r-name">IAEDP Provider Search ↗</div>
-            <div class="r-desc">Certified eating disorder specialists</div>
-          </a>
-          <a class="resource-link">
-            <div class="r-name">UofL Psychological Services Center ↗</div>
-            <div class="r-desc">Sliding-scale treatment at our clinic</div>
-          </a>
-        </div>
-
-        <div class="resource-group">
-          <h3>Educational reading</h3>
-          <a class="resource-link">
-            <div class="r-name">What is an eating disorder? →</div>
-            <div class="r-desc">Types, warning signs, and evidence-based treatments</div>
-          </a>
-          <a class="resource-link">
-            <div class="r-name">How to support a loved one →</div>
-            <div class="r-desc">A guide for family, friends, and partners</div>
-          </a>
-          <a class="resource-link">
-            <div class="r-name">Barriers to treatment access →</div>
-            <div class="r-desc">Our work with Project HEAL</div>
-          </a>
-        </div>
-
-        <div class="resource-group">
-          <h3>For clinicians</h3>
-          <a class="resource-link">
-            <div class="r-name">Personalized treatment training →</div>
-            <div class="r-desc">Workshops for practicing clinicians</div>
-          </a>
-          <a class="resource-link">
-            <div class="r-name">Statistical consultation →</div>
-            <div class="r-desc">Network analysis &amp; EMA methods support</div>
-          </a>
-          <a class="resource-link">
-            <div class="r-name">Legacy of Hope Summit Report ↗</div>
-            <div class="r-desc">2024 policy recommendations</div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<!-- ================ NEWS ================ -->
-<main class="page" id="page-news">
-  <div class="page-header">
-    <div class="container">
-      <div class="breadcrumb"><a onclick="showPage('home')">Home</a> · News</div>
-      <h1>Blog &amp; In the Press</h1>
-      <p>Press coverage, new publications, grant announcements, and updates from the lab.</p>
-    </div>
-  </div>
-
-  <section>
-    <div class="container">
-      <div style="display:flex; gap:8px; justify-content:center; margin-bottom:40px; flex-wrap:wrap;">
-        <button class="filter-btn active">All</button>
-        <button class="filter-btn">Press</button>
-        <button class="filter-btn">Publications</button>
-        <button class="filter-btn">Grants</button>
-        <button class="filter-btn">Lab news</button>
-      </div>
-
-      <div class="news-grid">
-        <div class="news-card featured">
-          <div class="news-image">$11.5 Million Grant</div>
-          <div class="news-body">
-            <div class="news-source">UofL News</div>
-            <h4>University of Louisville awarded $11.5 million for eating disorder research</h4>
-            <p>A landmark grant to expand prevention and treatment research infrastructure.</p>
-            <div class="news-date">November 2024</div>
-          </div>
-        </div>
-        <div class="news-card">
-          <div class="news-image n2">Personalized Care</div>
-          <div class="news-body">
-            <div class="news-source">Sydney Morning Herald</div>
-            <h4>Personalised medicine approach showing promise</h4>
-            <div class="news-date">Spring 2025</div>
-          </div>
-        </div>
-        <div class="news-card">
-          <div class="news-image n3">VR Treatment</div>
-          <div class="news-body">
-            <div class="news-source">UofL News</div>
-            <h4>UofL researchers develop VR technology to combat eating disorders</h4>
-            <div class="news-date">2024</div>
-          </div>
-        </div>
-        <div class="news-card">
-          <div class="news-image">Weight Discrimination</div>
-          <div class="news-body">
-            <div class="news-source">Courier Journal · Op-ed</div>
-            <h4>Kentucky must take action against weight discrimination</h4>
-            <div class="news-date">January 2024</div>
-          </div>
-        </div>
-        <div class="news-card">
-          <div class="news-image n2">Profile</div>
-          <div class="news-body">
-            <div class="news-source">Here &amp; Beyond</div>
-            <h4>Taking eating disorders seriously</h4>
-            <div class="news-date">September 2024</div>
-          </div>
-        </div>
-        <div class="news-card">
-          <div class="news-image n3">R01 Grant</div>
-          <div class="news-body">
-            <div class="news-source">NIMH</div>
-            <h4>New R01 funds five-year trial of personalized treatment</h4>
-            <div class="news-date">February 2025</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -763,17 +330,17 @@
       <div class="footer-col">
         <h5>Explore</h5>
         <ul>
-          <li><a onclick="showPage('home')">About</a></li>
-          <li><a onclick="showPage('research')">Research</a></li>
-          <li><a onclick="showPage('team')">Our Team</a></li>
-          <li><a onclick="showPage('news')">News</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/research-publications">Research</a></li>
+          <li><a href="/our-team">Our Team</a></li>
+          <li><a href="/blog">News</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Get involved</h5>
         <ul>
-          <li><a onclick="showPage('participate')">Participate</a></li>
-          <li><a onclick="showPage('resources')">Resources</a></li>
+          <li><a href="/participate-in-research">Participate</a></li>
+          <li><a href="/eating-disorder-resources">Resources</a></li>
           <li><a>Donate</a></li>
           <li><a>Prospective students</a></li>
         </ul>
@@ -801,19 +368,25 @@
 </footer>
 
 <script>
-function showPage(id) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-' + id).classList.add('active');
-  document.querySelectorAll('nav.primary a').forEach(l => {
-    l.classList.toggle('active', l.dataset.page === id);
-  });
-  window.scrollTo({ top: 0, behavior: 'instant' });
-}
-
+// Mobile nav toggle (unrelated to page switching — kept from the SPA).
 function toggleMobile() {
   document.getElementById('mobileNav').classList.toggle('open');
 }
 
+// Current-page nav indication. Identical on every page — safe to find-and-replace.
+(function () {
+  var path = window.location.pathname.replace(/\.html$/, '').replace(/\/index$/, '/');
+  if (path.length > 1) path = path.replace(/\/$/, '');
+  if (!path) path = '/';
+  var links = document.querySelectorAll('nav.primary a:not(.cta-button), .mobile-nav a');
+  Array.prototype.forEach.call(links, function (a) {
+    var href = (a.getAttribute('href') || '').replace(/\.html$/, '');
+    if (href === path) {
+      a.classList.add('active');
+      a.setAttribute('aria-current', 'page');
+    }
+  });
+})();
 </script>
 
 </body>
