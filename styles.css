@@ -378,7 +378,9 @@
     border-radius: 16px;
     padding: 48px;
     display: grid;
-    grid-template-columns: 1fr 1.6fr;
+    /* Director photo carries more weight against the mission text: the image
+       column takes 1/2.167 of the row rather than 1/2.6 — exactly 20% wider. */
+    grid-template-columns: 1fr 1.167fr;
     gap: 48px;
     align-items: center;
   }
