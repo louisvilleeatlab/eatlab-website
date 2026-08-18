@@ -932,3 +932,29 @@
     font-size: 13px;
   }
   .footer-social a:hover { color: white; }
+
+  /* ---- team photos: real headshots replace the initial-letter placeholders ---- */
+  .team-photo { overflow: hidden; }
+  .team-photo img,
+  .director-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .director-photo { overflow: hidden; }
+
+  .director-info .team-pronouns { font-size: 13px; }
+
+  /* ---- About: the director's headshot replaces the gradient placeholder ----
+     The label text is white, and the headshot's background is white, so the
+     ::after highlight becomes a bottom scrim to keep the caption legible.
+     Explicit z-indexes: photo under scrim, scrim under label. */
+  .about-image:has(img) { background: none; place-items: end stretch; }
+  .about-image img {
+    position: absolute; inset: 0; z-index: 0;
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .about-image:has(img)::after {
+    z-index: 1;
+    background: linear-gradient(to top,
+      rgba(18,18,20,0.74) 0%, rgba(18,18,20,0.30) 26%, rgba(18,18,20,0) 52%);
+  }
+  .about-image:has(img) .about-image-label {
+    z-index: 2; text-align: left; padding: 22px 24px;
+  }
