@@ -950,11 +950,10 @@
     position: absolute; inset: 0; z-index: 0;
     width: 100%; height: 100%; object-fit: cover; display: block;
   }
-  .about-image:has(img)::after {
-    z-index: 1;
-    background: linear-gradient(to top,
-      rgba(18,18,20,0.74) 0%, rgba(18,18,20,0.30) 26%, rgba(18,18,20,0) 52%);
-  }
+  /* No scrim: the photo is composited onto the card colour, so a dark gradient
+     would read as a slab floating on the card rather than as part of a photo.
+     The label sits over the blazer, which is dark enough to carry white text. */
+  .about-image:has(img)::after { background: none; }
   .about-image:has(img) .about-image-label {
     z-index: 2; text-align: left; padding: 22px 24px;
   }
